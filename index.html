@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Nikpour | Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">MN</div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="glitch-text">Mohammad Nikpour</h1>
+            <h2 class="typewriter">Developer & CS Student</h2>
+            <p class="hero-description">Building innovative digital experiences with modern technologies</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-button primary">View Projects</a>
+                <a href="#contact" class="cta-button secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div id="threejs-container"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm Mohammad Nikpour, a developer currently studying Computer Science at Hitit University in Turkey. My passion lies in creating innovative and user-friendly applications that solve real-world problems.</p>
+                <p>With expertise in Python, Dart, C#, PHP (Laravel), Flutter, and web technologies, I enjoy working on diverse projects that challenge me to grow as a developer.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+            <h3>My Journey</h3>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2021</h4>
+                        <p>Started Computer Science at Hitit University</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2022</h4>
+                        <p>Learned Flutter & Dart for mobile development</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2023</h4>
+                        <p>Mastered Laravel & PHP for web applications</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Present</h4>
+                        <p>Expanding knowledge in 3D web technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-php"></i>
+                </div>
+                <h3>PHP (Laravel)</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="80"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML/CSS</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="90"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="75"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-flutter"></i>
+                </div>
+                <h3>Flutter/Dart</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h3>C#</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="70"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="desktop">Desktop</button>
+        </div>
+        <div class="projects-container">
+            <div class="project-card" data-category="web">
+                <div class="project-img">
+                    <img src="https://placehold.co/600x400/252934/FFFFFF?text=E-Commerce+Platform" alt="E-Commerce Platform">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-featured online store built with Laravel and Vue.js</p>
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>Vue.js</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="mobile">
+                <div class="project-img">
+                    <img src="https://placehold.co/600x400/252934/FFFFFF?text=Fitness+Tracker+App" alt="Fitness Tracker App">
+                </div>
+                <div class="project-info">
+                    <h3>Fitness Tracker App</h3>
+                    <p>A mobile application for tracking workouts and nutrition</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="desktop">
+                <div class="project-img">
+                    <img src="https://placehold.co/600x400/252934/FFFFFF?text=Inventory+Management" alt="Inventory Management">
+                </div>
+                <div class="project-info">
+                    <h3>Inventory Management</h3>
+                    <p>A desktop application for managing inventory and sales</p>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="web">
+                <div class="project-img">
+                    <img src="https://placehold.co/600x400/252934/FFFFFF?text=Portfolio+Website" alt="Portfolio Website">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern portfolio website with 3D elements and animations</p>
+                    <div class="project-tech">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Three.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">Mohammad created an exceptional e-commerce platform for our business. His attention to detail and technical expertise made the project a success.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://placehold.co/100x100" alt="Client">
+                    </div>
+                    <div class="author-info">
+                        <h4>John Smith</h4>
+                        <p>CEO, TechStore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">Working with Mohammad was a pleasure. He delivered our mobile app ahead of schedule and exceeded our expectations in terms of functionality and design.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://placehold.co/100x100" alt="Client">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Founder, FitLife</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p class="testimonial-text">Mohammad's problem-solving skills and technical knowledge made our inventory system project a breeze. Highly recommended for any software development needs.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://placehold.co/100x100" alt="Client">
+                    </div>
+                    <div class="author-info">
+                        <h4>Michael Brown</h4>
+                        <p>Operations Manager, RetailCo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>mohammad.nikpour@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+90 123 456 7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Çorum, Turkey</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <div class="form-highlight"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <div class="form-highlight"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <div class="form-highlight"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        <div class="form-highlight"></div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">MN</div>
+            <p>&copy; 2023 Mohammad Nikpour. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/three-animation.js"></script>
+</body>
+</html>
